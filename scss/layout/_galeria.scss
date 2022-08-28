@@ -1,0 +1,24 @@
+.card-galeria {
+    @extend .galeria;
+    max-width: 270px;
+    
+
+    img {
+        @extend .foto;
+        transition: 0.3s
+    }
+
+    & img:hover {
+        filter: opacity(.8);
+    }
+
+    h3 {
+        @extend .nombre;
+        text-align: center;
+        text-transform: initial;
+        font-family:$font-navbar;
+        color: $color--dark;
+
+    }
+
+}

@@ -1,0 +1,61 @@
+/**CONTENIDO PRINCIPAL**/
+
+.main--contenido {
+    margin: 0 1rem 5rem 1rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 43px;
+    margin-bottom: 5rem;
+
+    span {
+        font-size: 43px;
+        font-weight: bold;
+        color: $color--orange;
+    }
+}
+
+.main--fondo {
+    --bs-gutter-x: 0;
+    /*fondo*/
+    background: #8092a1;
+    background: -webkit-linear-gradient(to right, #c3cacc, #8092a1);
+    background: linear-gradient(to right, #c3cacc, #8092a1);
+    /*sombra*/
+    box-shadow: $box-sombra;
+}
+
+/*sombra en las cards*/
+.card {
+    box-shadow: $box-sombra;
+
+    border: none;
+
+    /*tamaño de las imagenes de las cards*/
+    & img {
+        margin: auto;
+    }
+
+
+    /*color en el fondo descriptivo de las cards*/
+    &-body_color {
+        background: #000000;
+        background: -webkit-linear-gradient(to right, #434343, #000000);
+        background: linear-gradient(to right, #434343, #000000);
+        color: $color--white;
+    }
+}
+
+/*Contenido principal de seccion "tienda" */
+.main--tienda {
+    @extend .main--contenido;
+    margin-top: 5rem;
+}
+
+.main--pagos{
+    margin-top: 5rem;
+}
+.grilla--nosotros_main{
+    margin-top: 5rem;
+}

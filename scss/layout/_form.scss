@@ -1,0 +1,9 @@
+/**Formulario**/
+.form--color {
+    /*color fondo*/
+    background: #8092a1;
+    background: -webkit-linear-gradient(to right, #c3cacc, #8092a1);
+    background: linear-gradient(to right, #c3cacc, #8092a1);
+    /*sombra*/
+    box-shadow: $box-sombra;
+}
